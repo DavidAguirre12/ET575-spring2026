@@ -92,9 +92,9 @@ int main(){
 
     //Print result
     cout<<"Logical comparison 1 = "<<logicalcom<<endl;
-    cout<<"Logical comparison 2 = "<<logicalcom<<endl;
-    cout<<"Logical comparison 3 = "<<logicalcom2<endl;
-    cout<<"Logical comparison 4 = "<<logicalcom3<endl;
+    cout<<"Logical comparison 2 = "<<logicalcom2<<endl;
+    cout<<"Logical comparison 3 = "<<logicalcom3<<endl;
+    cout<<"Logical comparison 4 = "<<logicalcom4<<endl;
     
     return 0;
 }
