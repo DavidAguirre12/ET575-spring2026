@@ -41,5 +41,30 @@ int main(){
 
     //print results
     cout<<"Welcome to C++ "<<lastname<<" Your rate is "<<n<<endl;
+
+
+    //Exercises 
+    string country;
+    char gender;
+    int zipcode;
+    float rate;
+
+    cout<<"Type your favorite country: ";
+    cin>>country;
+
+    cout<<"Type your gender ('f' for female, 'm' for male and 'o' for others): ";
+    cin>>gender;
+
+    cout<<"Enter your zipcode: ";
+    cin>>zipcode;
+
+    cout<<"Enter your tax rate: ";
+    cin>>rate;
+
+    cout<<"Entered country: "<<country<<endl;
+    cout<<"Selecter gender: "<<gender<<endl;
+    cout<<"Zip code: "<<zipcode<<endl;
+    cout<<"Tax rate: "<<rate<<endl;
+
     return 0;
 }
