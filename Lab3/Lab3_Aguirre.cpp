@@ -96,5 +96,47 @@ int main(){
     cout<<"Logical comparison 3 = "<<logicalcom3<<endl;
     cout<<"Logical comparison 4 = "<<logicalcom4<<endl;
     
+
+
+    //Exercises 
+    int a;
+    int b;
+
+    cout<<"Enter the value of 'a': ";
+    cin>>a;
+
+    cout<<"Enter the value for 'b': ";
+    cin>>b;
+
+    cout<<"Arithmetic Operations:"<<endl;
+    cout<<"The sum of the values of a and b is = "<<a+b<<endl;
+    cout<<"The substracion of the values of a and b is = "<<a-b<<endl;
+    cout<<"The multipication of the values of a and b is = "<<a*b<<endl;
+    cout<<"The division of the values of a and b is = "<<a/b<<endl;
+    cout<<"The mod of a and b is = "<<a%b<<endl;
+
+    cout<<"After assignment operations:"<<endl;
+    cout<<"The original number = "<<a<<endl;
+    cout<<"The original number = "<<b<<endl;
+    a += 10;
+    b -= 5;
+    cout<<"Update number = "<<a<<endl;
+    cout<<"Update number = "<<b<<endl;
+
+    cout<<"Boolean Operations:"<<endl;
+    bool check7 = a > b;
+    bool check8 = a == b;
+    bool check9 = a != b;
+
+    bool logicalcom5 = a && b;
+    bool logicalcom6 = a || b;
+    bool logicalcom7 = !check7;
+
+    cout<<"Is a greater than b? "<<check7<<endl;
+    cout<<"Is a equal to b? "<<check8<<endl;
+    cout<<"Is a not equal to b? "<<check9<<endl;
+    cout<<"Are both a and b positive? "<<logicalcom5<<endl;
+    cout<<"Is either a or b negative? "<<logicalcom6<<endl;
+    cout<<"Is a not grater than b? "<<logicalcom7<<endl;
     return 0;
 }
