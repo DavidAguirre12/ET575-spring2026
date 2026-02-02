@@ -58,7 +58,7 @@ int main(){
     cout<<"Original word = "<<word<<endl;
     //replace the word 'ee' with 'FUTURE'. The result will be "enginFUTUREring"
     word.replace(5,2,"FUTURE");
-    cout<<"Afte rthe replace method = "<<word<<endl;
+    cout<<"After the replace method = "<<word<<endl;
 
     cout<<"\n-----Example 8: erase character in a string-----"<<endl;
     // erase(index where the erase will happen, amount of characters to be erased)
@@ -82,9 +82,13 @@ int main(){
     string word4; 
     cout<<"Enter a new word: "<<endl;
     cin>> word4;
-    cout<<"The second character from your word is: "<<word4[1]<<endl;
+    cout<<"2nd character: "<<word4[1]<<endl;
     int word4_length = word4.length();
     cout<<"Your word has "<<word4_length<<" characters"<<endl;
+    word4.replace(2,2,"--$--");
+    cout<<"Replace word = "<<word4<<endl;
+    word4.erase(word4_length-3);
+    cout<<"Remove end characters: "<<word4<<endl;
 
     return 0;
 }
