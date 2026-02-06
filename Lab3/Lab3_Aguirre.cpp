@@ -55,7 +55,7 @@ int main(){
     // == compare if numbers are equal 
     // != compare if numbers are not equal
     // >  grater than
-    // < kess than
+    // < less than
     // >= greater than ir equal to
     // <= less than or equal to
 
