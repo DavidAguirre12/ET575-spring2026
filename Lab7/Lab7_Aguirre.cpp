@@ -24,7 +24,7 @@ int main(){
             cout<<number<<" is negative and odd!"<<endl;
     }
     else{
-        cout<<"The numer is zero"<<endl;
+        cout<<"The number is zero"<<endl;
     }
 
     cout<<"\n-----Example 2: Nested conditional-----"<<endl;
@@ -32,7 +32,7 @@ int main(){
     //declare variables
     int num1, num2, num3;
     //collect values 
-    cout<<"Ener three numbers: "<<endl;
+    cout<<"Enter three numbers: "<<endl;
     cin>>num1>>num2>>num3;
     //condinitonal statement
     if(num1>num2 && num1>num3){
@@ -71,7 +71,7 @@ int main(){
 
 
 
-    cout<<"\n-----Exercises-----"<<endl;
+    cout<<"\n-----Exercise-----"<<endl;
     int budget;
     cout<<"Enter the price of your car budget: "<<endl;
     cin>>budget;
@@ -80,10 +80,17 @@ int main(){
     }
     else if(budget>=10001 && budget<=30000){
         cout<<"You can afford an economy car"<<endl;
+        if(budget>=10001 && budget<=20000)
+            cout<<"You can afford a Compact car"<<endl;
+        else    
+            cout<<"You can afford a Mid-size car"<<endl;
     }
     else if(budget>=30001 && budget<=70000){
         cout<<"You afford a standard car"<<endl;
-        if
+        if(budget>=30001 && budget<=50000)
+            cout<<"You can afford a Sedan"<<endl;
+        else
+            cout<<"You can aford a Luxury Sedan"<<endl;        
     }
     else if(budget>=70001 && budget<=150000){
         cout<<"You can afford a performance oriented car"<<endl;
