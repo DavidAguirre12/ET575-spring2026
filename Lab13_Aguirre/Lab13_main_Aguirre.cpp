@@ -37,5 +37,17 @@ int main(){
 
     int area_rec = arearectangle(lenght,width);
     printarea(lenght, width, area_rec);
+
+
+    cout<<"----------Exercises----------"<<endl;
+
+    int number;
+    
+    cout<<"Enter a number: ";
+    cin>>number;
+
+    bool check = evennumber(number);
+    printresult(number, check);
+    
     return 0;
 }

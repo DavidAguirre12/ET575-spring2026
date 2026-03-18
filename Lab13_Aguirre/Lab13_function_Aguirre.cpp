@@ -65,3 +65,16 @@ int arearectangle(int lenght, int width){
 void printarea(int lenght, int width, int area){
     cout<<"The area of a rectanlge with "<<lenght<<" and "<<width<<" is "<<area<<endl;
 }
+
+bool evennumber(int num){
+    if(num%2==0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+void printresult(int num, bool result){
+    cout<<"Is "<<num<<" even? "<<result<<endl;
+}
