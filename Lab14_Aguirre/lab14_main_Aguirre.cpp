@@ -27,5 +27,16 @@ int main(){
     float h = hypotenuse(side1,side2);
     printresult(side1, side2, h);
 
+    cout<<"----------Exercise -----------"<<endl;
+    cout<<"Enter the coordinates of the first point: "<<endl;
+    double x1 = enternumber();
+    double y1 = enternumber();
+    cout<<"Enter the coordinates of the second point: "<<endl;
+    double x2 = enternumber();
+    double y2 = enternumber();
+
+    double d = distance(x1,y1,x2,y2);
+    distanceresult(x1,y1,x2,y2,d);
+    
     return 0;
 }

@@ -6,6 +6,7 @@ March 18, 2026
 
 #include <iostream>
 using namespace std;
+#include<cmath>
 
 //Example 1: function calling function
 int multiply(int a, int b){
@@ -96,4 +97,26 @@ float hypotenuse(int side1, int side2){
 //Print the result
 void printresult(int side1, int side2, float h){
     cout<<"The hypotenuse of triangle with sides "<<side1<<" and "<<side2<<" is = "<<h<<endl;
+}
+
+double enternumber(){
+    double f;
+    cout<<"Enter positive number: ";
+    cin>>f;
+
+    if(f<=0){
+        cout<<"Error!. Enter a number greater than 0";
+        return enternumber();
+    }
+    else{
+        return f;
+    }
+}
+
+float distance(double x1, double x2, double y1, double y2){
+    return sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+}
+
+void distanceresult(double x1, double x2, double y1, double y2, double d){
+    cout<<"The distance of points ("<<x1<<","<<y1<<") and ("<<x2<<","<<y2<<") is = "<<d<<endl;
 }
