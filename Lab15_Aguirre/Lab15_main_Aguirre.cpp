@@ -23,5 +23,15 @@ int main(){
     int roll2 = 1+rand()%6;
     bool resultmatch = matchdices(roll1, roll2);
     printdices(roll1, roll2, resultmatch);
+
+    cout<<"Exercise"<<endl;
+    int roll3 = 1+rand()%6;
+    int roll4 = 1+rand()%6;
+
+    cout<<"Dice 1: "<<roll3<<endl;
+    cout<<"Dice 2: "<<roll4<<endl;
+
+    bool resultSnake = snakeeyes(roll3, roll4);
+    printresultsnake(resultSnake)<<endl;
     return 0;
 }
