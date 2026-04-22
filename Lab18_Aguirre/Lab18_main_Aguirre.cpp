@@ -37,6 +37,12 @@ int main(){
     const int sizearray = 5;
     int b[sizearray];
     int sizelist;
-    collectnumber(b,listsize,sizearray);
+    collectnumber(b,sizelist,sizearray);
+
+    double average = averagenumber(b, sizelist);
+
+    int closest = closestmean(b, sizelist, average);
+
+    printresult(average, closest);
     return 0;
 }

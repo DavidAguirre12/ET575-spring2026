@@ -66,3 +66,28 @@ void collectnumber( int *array, int &numberuserindex, int arraysize){
         }
     }while(number !=0 && index <arraysize);
 }
+
+double averagenumber(int *array, int numberuserindex){
+    double sum = 0;
+    for(int l = 0; l < numberuserindex; l++){
+        sum += array[l];
+    }
+    return (double)sum / numberuserindex;
+}
+
+int closestmean(int *array, int numberuserindex, double average){
+    int closestnum = array[0];
+    double minDiff = abs(array[0] - average);
+    for(int i =1; i<numberuserindex; i++){
+        double diff = abs(array[i] - average);
+        if(diff< minDiff){
+            minDiff = diff;
+            closestnum = array[i];
+        };
+    }
+    return closestnum;
+}
+
+void printresult(double averagenumber, int closest){
+    cout<<"The closest number to average "<<averagenumber<<" is: "<<closest<<endl;
+}
