@@ -35,6 +35,7 @@ int main(){
     do{
         populate(numbers);
         printvaluearray(numbers);
+        cout<<fixed<<endl;
         cout<<"Average: "<<average(numbers)<<endl;
         cout<<"Another run? (y/n): ";
         cin>>choice;

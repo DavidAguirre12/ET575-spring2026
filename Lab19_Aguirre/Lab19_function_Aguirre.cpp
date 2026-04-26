@@ -39,7 +39,7 @@ void printsum(int sumevenpositive){
 //Exercise
 void populate(int arr[row][col]){
     for(int i = 0; i<row; i++){
-        for (int j = 0; i<col; j++){
+        for (int j = 0; j<col; j++){
             arr[i][j]=rand()%101;
         }
     }
@@ -47,8 +47,8 @@ void populate(int arr[row][col]){
 
 void printvaluearray(int arr[row][col]){
     for(int i = 0; i<row; i++){
-        for (int j = 0; i<col; j++){
-            cout<<arr[i][j];
+        for (int j = 0; j<col; j++){
+            cout<<arr[i][j]<<" ";
         }
         cout<<endl;
     }
@@ -57,7 +57,7 @@ void printvaluearray(int arr[row][col]){
 double average(int arr[row][col]){
     double sum = 0;
     for(int i = 0; i<row; i++){
-        for (int j = 0; i<col; j++){
+        for (int j = 0; j<col; j++){
             sum += arr[i][j];
         }
     }
