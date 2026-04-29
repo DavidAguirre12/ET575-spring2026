@@ -22,5 +22,14 @@ int main(){
 
     cout<<"----------Example 4: Append data----------"<<endl;
     appendmsg("sample.txt","David Aguirre");
+
+    cout<<"----------Example 5: Check if a file exists----------"<<endl;
+    checkfile("sample.txt");
+
+    cout<<"----------Exercise----------"<<endl;
+    createfile("data_user.txt");
+    sendmsg("data_user.txt", "New message by David Aguirre!");
+    readfile("data_user.txt");
+
     return 0;
 }

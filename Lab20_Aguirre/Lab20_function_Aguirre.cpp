@@ -59,7 +59,7 @@ void writefile(string filename){
     //Declare an object to handle output files, fout
     ofstream fout;
     //Open the file
-    //Id the file exists, it will overwrited
+    //If the file exists, it will overwrited
     //If the file doesn't exist, it will create a new file
     fout.open(filename);
     //Write "Student's full name" in the first line of file
@@ -81,4 +81,49 @@ void appendmsg(string filename, string msg){
     fout<<"GAME OVER \n"<<msg<<endl;
 
     fout.close();
+}
+
+//Example 5: check if a file exists
+void checkfile(string filename){
+    ifstream fin;
+    fin.open(filename);
+
+    //If the filename doesn't exist in the root direcory, exit the function
+    if(fin.fail()){
+        cout<<"File "<<filename<<" doesn't exist!"<<endl;
+        exit(1);
+    }
+
+    //If the filename exists, then read all the lines in the file
+    string eachline;
+    while(getline(fin,eachline)){
+        cout<<"Line 1 = "<<eachline<<endl;
+    }
+
+    //Close the file
+    fin.close();
+}
+
+void createfile(string filename){
+    ofstream fout;
+    fout.open(filename);
+    fout<<"This is my output file - David Aguirre \n";
+    fout.close();
+}
+
+void sendmsg(string filename, string msg){
+    ofstream fout;
+    fout.open(filename, ios::app);
+    fout<<msg<<endl;
+    fout.close();
+}
+
+void readfile(string filename){
+    ifstream fin;
+    fin.open(filename);
+    string eachline;
+    while(getline(fin, eachline)){
+        cout<<"Line = "<<eachline<<endl;
+    }
+    fin.close();
 }
